@@ -1,0 +1,14 @@
+# frontend deps/build
+client/fe/node_modules/
+client/fe/dist/
+
+# logs
+*.log
+npm-debug.log*
+
+# env
+.env
+.env.*
+
+# mac
+.DS_Store
