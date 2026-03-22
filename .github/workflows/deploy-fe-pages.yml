@@ -20,12 +20,12 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: client/fe
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -35,9 +35,11 @@ jobs:
           cache-dependency-path: client/fe/package-lock.json
 
       - name: Install dependencies
+        working-directory: client/fe
         run: npm ci
 
       - name: Build
+        working-directory: client/fe
         run: npm run build
 
       - name: Upload Pages artifact
