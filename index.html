@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reel-forge — more to come</title>
+    <meta name="description" content="reel-forge is an AI-directed photo-to-reel engine. More to come." />
+    <style>
+      :root {
+        --bg: #0a0a0a;
+        --surface: #141414;
+        --text: #f4f4f5;
+        --muted: #9ca3af;
+        --accentA: #36f3c8;
+        --accentB: #32a4ff;
+        --border: #262626;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background: radial-gradient(circle at 18% 18%, #0f172a 0%, var(--bg) 42%);
+        color: var(--text);
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .card {
+        width: min(760px, 100%);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: linear-gradient(180deg, rgba(20,20,20,.9), rgba(12,12,12,.92));
+        padding: 36px;
+        box-shadow: 0 12px 36px rgba(0,0,0,.35);
+      }
+      .chip {
+        display: inline-block;
+        font-size: 12px;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        color: var(--accentA);
+        border: 1px solid #214f46;
+        background: rgba(54,243,200,.08);
+        border-radius: 999px;
+        padding: 6px 12px;
+        margin-bottom: 16px;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(28px, 4vw, 44px);
+        letter-spacing: -.02em;
+      }
+      .gradient {
+        background: linear-gradient(90deg, var(--accentA), var(--accentB));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      p {
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 16px;
+        margin-top: 16px;
+      }
+      ul {
+        margin: 20px 0 0;
+        padding-left: 20px;
+        color: #d4d4d8;
+      }
+      li { margin: 10px 0; }
+      footer {
+        margin-top: 28px;
+        font-size: 13px;
+        color: #71717a;
+      }
+      a { color: var(--accentB); text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <span class="chip">preview</span>
+      <h1><span class="gradient">reel-forge</span></h1>
+      <p>
+        A direction-first engine for turning personal photo archives into trend-aware short videos.
+        The focus is semantic retrieval, agentic composition, and repeatable creative workflows.
+      </p>
+      <ul>
+        <li>Natural-language media retrieval from personal archives</li>
+        <li>Agent-guided scene planning and composition</li>
+        <li>Audio-aware sequencing and polished final render</li>
+      </ul>
+      <footer>
+        More to come. Follow the build here on GitHub.
+      </footer>
+    </main>
+  </body>
+</html>
