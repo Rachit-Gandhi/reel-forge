@@ -1,14 +1,9 @@
 # reel-forge
 
-A direction-first engine for turning personal photo archives into trend-aware short videos.
+Monorepo-style project scaffold.
 
-## Status
+## Current scope
 
-Early preview landing page is live. More to come.
+- `client/fe` → early frontend landing page preview
 
-## Vision
-
-- semantic retrieval over personal media
-- agent-guided composition workflows
-- clean render pipeline with audio-aware timing
-
+More modules will be added over time.
